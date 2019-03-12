@@ -45,7 +45,7 @@ svg {
 .x .line {
   stroke-width: 5.5px;
 }
-/* First plate */
+
 .plate1 .line2 {
   stroke-dasharray: 40 200;
   stroke-dashoffset: 0px;
@@ -182,7 +182,7 @@ svg {
 .active.plate3 .x {
   transition: transform 400ms 100ms;
 }
-/* Die vierte teller */
+
 .plate4 .x {
   transition: transform 400ms;
 }
@@ -257,7 +257,7 @@ svg {
 .active.plate5 .x {
   transition: transform 400ms 50ms;
 }
-/* Шестая пластина */
+
 .plate6 .line {
   transition: stroke-dasharray 400ms 100ms, stroke-dashoffset 400ms 100ms, transform 400ms 100ms;
 }
@@ -299,7 +299,7 @@ svg {
 .active.plate6 .x {
   transition: transform 400ms 50ms;
 }
-/* 제 7 판 */
+
 .plate7 .line {
   transition: stroke-dasharray 400ms 100ms, stroke-dashoffset 400ms 100ms, transform 400ms 100ms;
 }
