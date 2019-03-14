@@ -1,0 +1,72 @@
+@mixin flex-row($align, $justify) {
+  display: flex;
+  flex-direction: row;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin flex-column($align, $justify) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin bg-img-placement($pos-x, $pos-y) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: $pos-x $pos-y;
+}
+
+$wcpurp: #492365;
+$vw-width: 50vw;
+$image-width: 1600;
+$image-height: 650;
+
+body {
+  @include flex-column(center, center);
+}
+
+.banner {
+  @include flex-row(center, center);
+  width: $vw-width;
+  margin: 1em;
+  
+  &__title {
+    color: white;
+    font-size: 5vmin;
+  }
+  
+  &--2-1 {
+    background-color: $wcpurp;
+    height: calc(#{$vw-width} / (2 / 1));
+  }
+  
+  &--3-2 {
+    background-color: lighten($wcpurp, 20%);
+    height: calc(#{$vw-width} / (3 / 2));
+  }
+  
+  &--4-3 {
+    background-color: lighten($wcpurp, 30%);
+    height: calc(#{$vw-width} / (4 / 3));
+  }
+  
+  &--16-9 {
+    background-color: lighten($wcpurp, 40%); 
+    height: calc(#{$vw-width} / (16 / 9));
+  }
+  
+  &--source-aspect {
+    background: 
+      linear-gradient(
+        rgba(173, 35, 101, 0.3), 
+        rgba(173, 35, 101, 0.3)
+      ),
+      url(https://apps.weber.edu/wsuimages/davidbrogan/images/night_star_filter-bw-2x.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: calc(#{$vw-width} / (#{$image-width} / #{$image-height}));
+  }
+}
+
