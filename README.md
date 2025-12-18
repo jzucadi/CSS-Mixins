@@ -2,8 +2,6 @@
 
 A curated collection of reusable CSS preprocessor mixins and utilities for Sass, SCSS, and Stylus. This library includes common UI patterns, grid systems, and helper functions to streamline your CSS development workflow.
 
-## 📦 What's Included
-
 ### Core Mixins
 
 #### SCSS (`_mixins.scss`)
@@ -41,7 +39,7 @@ A curated collection of reusable CSS preprocessor mixins and utilities for Sass,
 - **Element Selection** (`select.ts`) - DOM selection helper
 - **XHR Demo** (`xhr_demo.ts`) - AJAX request example
 
-## 🚀 Usage
+## Usage
 
 ### SCSS Example
 ```scss
@@ -75,7 +73,7 @@ A curated collection of reusable CSS preprocessor mixins and utilities for Sass,
 }
 ```
 
-## 📋 Features
+## Features
 
 - **Multi-preprocessor Support** - Works with Sass, SCSS, and Stylus
 - **Production-Ready** - Battle-tested mixins for real-world projects
@@ -83,6 +81,6 @@ A curated collection of reusable CSS preprocessor mixins and utilities for Sass,
 - **Well-Documented** - Inline comments explain each mixin's purpose
 - **Modern & Legacy** - Includes fallbacks for older browsers
 
-## 📝 License
+## License
 
 Open source - feel free to use in your projects.
